@@ -9,5 +9,5 @@ rclone listremotes
 
 rclone mount $CLOUDNAME: /dmount
 rclone serve http $CLOUDNAME: --addr :$PORT --vfs-read-chunk-size 128M
-./megatools dl $link --path ./sendit
-rclone copy ./sendit $CLOUDNAME
+./megatools dl $link --path ./dmount
+rclone copy ./dmount $CLOUDNAME
