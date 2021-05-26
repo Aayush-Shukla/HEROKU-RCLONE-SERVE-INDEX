@@ -4,7 +4,7 @@ RUN set -ex\
     && apt upgrade -y \
     && apt install -y wget\
     && apt install fuse -y \
-    && apt install unzip -y \
+    && apt install unzip -y 
     
     
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
