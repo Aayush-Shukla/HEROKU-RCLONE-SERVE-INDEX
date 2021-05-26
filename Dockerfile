@@ -13,6 +13,7 @@ RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
 RUN mkdir dmount
 
 COPY megatools /megatools
+RUN chmod 755 /megatools
 COPY entrypoint.sh /entrypoint.sh
 #COPY developeranaz-rc.zip /developeranaz-rc.zip
 #COPY rclone.conf /.config/rclone/rclone.conf
