@@ -6,7 +6,7 @@ RUN set -ex\
     && apt install fuse -y \
     && apt install unzip -y \
     && apt install python3 -y \
-    && apt install python3-pip
+    
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     unzip rclone-current-linux-amd64.zip && \
     cp /rclone-*-linux-amd64/rclone /usr/bin/ && \
